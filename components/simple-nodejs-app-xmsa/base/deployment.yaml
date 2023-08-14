@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: simple-nodejs-app-xmsa
     spec:
       containers:
-      - image: nodejs-image:latest
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-qadn-tenant/nodejs-users/simple-nodejs-app-xmsa@sha256:978636918c87879b9366e709610bea1d1c69525f21160e07da55713cea25527b
         name: my-nodejs
         ports:
         - containerPort: 3001
