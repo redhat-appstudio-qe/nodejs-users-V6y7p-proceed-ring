@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: simple-nodejs-app-xmsa
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-qadn-tenant/nodejs-users/simple-nodejs-app-xmsa@sha256:978636918c87879b9366e709610bea1d1c69525f21160e07da55713cea25527b
+        name: my-nodejs
+        resources: {}
+status: {}
